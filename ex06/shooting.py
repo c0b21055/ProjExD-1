@@ -99,7 +99,7 @@ def move_bullet(screen):#弾を飛ばす
     for i in range(BULLET_MAX):
         
         if bull_f[i] == True:
-
+            
             bull_y[i] = bull_y[i] - 32
             screen.blit(img_attack2, [bull_x[i], bull_y[i]])
             if bull_y[i] < 0:
@@ -109,6 +109,7 @@ def move_bullet(screen):#弾を飛ばす
 
 def move_player(screen, key):
     global px, py, space, player_hp, player_muteki, idx, t, score, reload_timer, REROAD_TIME
+
     if key[pg.K_UP] == 1:
 
         py = py - 10
